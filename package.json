@@ -1,5 +1,5 @@
 {
-  "seripts": {
+  "scripts": {
     "cliTemp": "node cli.js $cred"
   },
   "type": "module",
