@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "cliTemp": "node cli.js $cred"
+    "cliTemp": "node cli.js"
   },
   "type": "module",
   "dependencies": {
