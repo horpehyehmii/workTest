@@ -25,7 +25,7 @@ pipeline {
               script{
                 sh "ls"
                 withEnv(["GITAPITOKEN=${cred}"]) {
-                  sh 'npm i && node cli.js $cred'
+                  sh 'npm i && npm run cliTemp -- ${GITAPITOKEN}'
                 }
               }
             }
