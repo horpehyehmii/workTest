@@ -18,11 +18,12 @@ pipeline {
         }
       }
       stage ("2") {
+        when{ not {branch 'master'}}
         steps {
           script{
             dir ("./src/") {
               script{
-                sh 'node cli.js $GITAPITOKEN'
+                sh 'npm i && node cli.js $GITAPITOKEN'
               }
             }
           }
