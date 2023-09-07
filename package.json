@@ -1,4 +1,7 @@
 {
+  "seripts": {
+    "cliTemp": "node cli.js $cred"
+  },
   "type": "module",
   "dependencies": {
     "@actions/core": "^1.10.0",

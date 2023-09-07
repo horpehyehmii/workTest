@@ -5,7 +5,7 @@ const octokit = new Octokit({
   request: {
     fetch: fetch,
   },
-  auth: process.argv[2],
+  auth: process.argv[3],
 });
 
 const run = async () => {
