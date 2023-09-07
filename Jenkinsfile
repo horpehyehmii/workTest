@@ -23,6 +23,7 @@ pipeline {
           script{
             dir ("./src/") {
               script{
+                sh "ls"
                 withEnv(["GITAPITOKEN=${cred}"]) {
                   sh 'npm i && node cli.js $GITAPITOKEN'
                 }
